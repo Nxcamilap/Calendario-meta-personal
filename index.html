@@ -38,7 +38,7 @@
   .tarjeta{
     background:var(--color-fondo);
     width:100%;
-    max-width:460px;
+    max-width:500px;
     border-radius:28px;
     padding:2rem 1.7rem 1.8rem;
     box-shadow:var(--sombra-suave);
@@ -303,7 +303,7 @@
 <div class="tarjeta">
 
   <div class="marca">
-    <h1><span class="adorno">✿</span>Mi Calendario de Metas<span class="adorno">✿</span></h1>
+    <h1><span class="adorno">✿</span>Mi Calendario de Meta<span class="adorno">✿</span></h1>
     <div class="linea"></div>
   </div>
 
@@ -314,7 +314,9 @@
       <button class="btn-nav" id="btnMesSiguiente" aria-label="Mes siguiente">›</button>
     </div>
   </div>
-  <p class="subtitulo">Seguimiento diario de tus metas personales</p>
+  <p class="subtitulo">Meta: Reducir tiempo de uso del celular (3h)
+    <br> Inicio: Sept 09
+  </p>
 
   <div class="dias-semana">
     <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
@@ -367,38 +369,70 @@
   /* =========================================================================
      IMÁGENES DE EVIDENCIA
      -------------------------------------------------------------------------
-     Aquí se agregan manualmente, cada semana, hasta 2 imágenes por día.
-     Las imágenes NO se suben desde el navegador (eso solo se guardaría en
-     tu dispositivo); en su lugar, van como archivos dentro de una carpeta
-     del proyecto, junto a este HTML, y aquí solo se escribe la ruta.
-
-     Estructura de carpetas sugerida en el proyecto (VS Code):
-       /calendario-metas.html
-       /imagenes/2026-09-10-1.jpg
-       /imagenes/2026-09-10-2.jpg
-
      Formato: 'YYYY-MM-DD': ['ruta imagen 1', 'ruta imagen 2']
-     (si solo tienes una imagen ese día, deja un solo elemento en el arreglo)
-
-     Ejemplo (descomenta y edita):
-     '2026-09-10': ['imagenes/2026-09-10-1.jpg', 'imagenes/2026-09-10-2.jpg'],
-     '2026-09-11': ['imagenes/2026-09-11-1.jpg'],
+     (si solo tienes una imagen ese día, dejar un solo elemento en el arreglo)
   ========================================================================= */
   const IMAGENES_DIAS = {
+    '2026-09-09': ['img/1-sept09.jpeg', 'img/2-sept09.jpeg'],
+    '2026-09-10': ['img/sept10.jpeg'],
+    '2026-09-11': ['img/sept11.jpeg'],
+    '2026-09-12': ['img/sept12.jpeg'],
+    '2026-09-13': ['img/1-sept14.jpeg', 'img/2-sept14.jpeg'],
+    '2026-09-14': ['img/1-sept14.jpeg', 'img/2-sept14.jpeg'], 
+    '2026-09-15': ['img/1-sept15.jpeg', 'img/2-sept15.jpeg'], 
     '2026-09-16': ['img/1-sept16.jpeg', 'img/2-sept16.jpeg'],
+    // '2026-09-17': ['img/1-sept17.jpeg', 'img/2-sept17.jpeg'],
+    // '2026-09-18': ['img/1-sept18.jpeg', 'img/2-sept18.jpeg'],
+    // '2026-09-19': ['img/1-sept19.jpeg', 'img/2-sept19.jpeg'],
+    // '2026-09-20': ['img/1-sept20.jpeg', 'img/2-sept20.jpeg'],
+    // '2026-09-21': ['img/1-sept21.jpeg', 'img/2-sept21.jpeg'],
+    // '2026-09-22': ['img/1-sept22.jpeg', 'img/2-sept22.jpeg'],
+    // '2026-09-23': ['img/1-sept23.jpeg', 'img/2-sept23.jpeg'],
+    // '2026-09-24': ['img/1-sept24.jpeg', 'img/2-sept24.jpeg'],
+    // '2026-09-25': ['img/1-sept25.jpeg', 'img/2-sept25.jpeg'],
+    // '2026-09-26': ['img/1-sept26.jpeg', 'img/2-sept26.jpeg'],
+    // '2026-09-27': ['img/1-sept27.jpeg', 'img/2-sept27.jpeg'],
+    // '2026-09-28': ['img/1-sept28.jpeg', 'img/2-sept28.jpeg'],
+    // '2026-09-29': ['img/1-sept29.jpeg', 'img/2-sept29.jpeg'],
+    // '2026-09-30': ['img/1-sept30.jpeg', 'img/2-sept30.jpeg'],
   };
 
   /* =========================================================================
      COMENTARIOS
-     -------------------------------------------------------------------------
-     Igual que las imágenes, los comentarios se agregan manualmente aquí en
-     el código. Quien abra la página SOLO puede visualizarlos, no escribir
-     ni modificar nada: así el contenido lo controlas únicamente tú.
-
+     -----------------------------------------------------------------------
      Formato: 'YYYY-MM-DD': 'texto del comentario'
   ========================================================================= */
   const COMENTARIOS_DIAS = {
-    '2026-09-16': 'Hoy fue el dia en el que considero que cumplí mi meta, me pasé por 4 minutitos jaja',
+    '2026-09-09': 'Este fue el primer dia del reto de limitar uso de celular, comencé con meta de 2 horas pero teniendo en cuenta que trabajo en marketing se complicó lograrla',
+
+    '2026-09-10': 'Almost there jaja',
+
+    '2026-09-11': 'en vez de reducirle, le subí un poco. Oops, I did it again.',
+
+    '2026-09-12': 'En este día sí me excedí, compensaré el tiempo con 10 pags de lectura',
+
+    '2026-09-13': 'En este punto la meta seguían siendo 2 horas, conseguí reducir bastante el tiempo de uso y compartí más tiempo con mi familia. Salí con mi mamá y mi pareja a jugar ping pong en el parque.',
+    
+    '2026-09-14': 'Aquí probé con 2h y 30mins de meta y aun así me excedí, pero seguía siendo baja la meta. Sin embargo establecí 3 horas como meta fija. Teniendo eso en cuenta, compensaré el tiempo excedente con 10 páginas de lectura',
+
+    '2026-09-15': 'Aquí ya la meta fija de tiempo fueron 3h, estuve en su rango',
+
+    '2026-09-16': 'Meeee pasé por 4 minutitos jaja, pero meta cumplida',
+
+    '2026-09-17': 'text',
+    '2026-09-18': 'text',
+    '2026-09-19': 'text',
+    '2026-09-20': 'text',
+    '2026-09-21': 'text',
+    '2026-09-22': 'text',
+    '2026-09-23': 'text',
+    '2026-09-24': 'text',
+    '2026-09-25': 'text',
+    '2026-09-26': 'text',
+    '2026-09-27': 'text',
+    '2026-09-28': 'text',
+    '2026-09-29': 'text',
+    '2026-09-30': 'text'
   };
 
   // ---------- Estado general ----------
